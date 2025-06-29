@@ -125,3 +125,22 @@ window.onload = () => {
   populateChapters();
   loadChapter();
 };
+function init() {
+  populateBooks();
+  applyFontSize();
+  applyFontFamily();
+}
+
+document.addEventListener("DOMContentLoaded", init);
+
+document.addEventListener("DOMContentLoaded", () => {
+  // Populate chapters when a book is selected
+  document.getElementById("bookPicker").addEventListener("change", populateChapters);
+
+  // Populate verses when a chapter is selected
+  document.getElementById("chapterPicker").addEventListener("change", populateVerses);
+
+  // Apply font settings on load
+  applyFontSize();
+  applyFontFamily();
+});

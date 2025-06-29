@@ -57,3 +57,11 @@ body.dark .highlight {
   z-index: 1000;
   padding: 10px;
 }
+.header {
+  position: sticky;
+  top: 0;
+  background: white;
+  padding: 10px;
+  z-index: 1000;
+  border-bottom: 1px solid #ccc;
+}
